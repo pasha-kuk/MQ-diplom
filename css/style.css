@@ -620,22 +620,30 @@ body {
 }
 
 .our-products-items {
-  width: 78%;
   display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
   margin-top: 40px;
- }
+}
+
+.our-products-pictures:nth-child(even) {
+  margin-right: 107px;
+  margin-left: 107px;  
+}
 
 .our-products-description {
-  width: 80%;
   display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+}
+
+.our-products-text:nth-child(even) {
+  margin-right: 75px;
+  margin-left: 75px;  
 }
 
 .our-products-text {
-  width: 25%;
+  width: 290px;
   box-sizing: content-box;
   border: 3px solid #e1d9bd;
   padding: 22px 18px;
