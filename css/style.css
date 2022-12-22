@@ -18,9 +18,9 @@ body {
 }
 
 .pop-up {
-/*  opacity: 0;*/
+  opacity: 0;
 
-  
+
   width: 100%;
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -962,7 +962,6 @@ body {
 
 .main {
   margin-top: 55px;
-  margin-bottom: 248;
   padding: 0;
 }
 .main-posts {
@@ -1726,7 +1725,6 @@ body {
 
 .shop-button-go {
   display: block;
-  margin-top: px;
   width: 110%;
   height: 48px;
   margin-right: 40px;
