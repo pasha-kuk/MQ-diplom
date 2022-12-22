@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,40 @@
 </head>
 
 <body>
+  <div class="pop-up">
+    <div class="popup-content">
+      <button class="popup__close" type="button"> </button>
+      <h2 class="popup-caption"> ваш фидбек </h2>
+      <form class="popup-form-visit">
+        <div class="form-group">
+          <label class="select-group">
+            <span class="select-label">Как часто вы заходите на сайт?</span>
+            <select class="select">
+              <option value="day" selected> Почти каждый день</option>
+              <option value="week">Раз в неделю</option>
+              <option value="month">Несколько раз в месяц</option>
+            </select>
+          </label>
+        </div>
+      </form>
+      <form class="popup-form-mailing">
+        <p class="popup-form-mailing-label">Вы подписаны на e-mail рассылку?</p>
+        <div>
+          <input class="answerChoice1" type="radio" name="answer" value="Yes">
+          <label class="answerChoice1-label">Да</label>
+
+          <input class="answerChoice2" type="radio" name="answer" value="No">
+          <label class="answerChoice2-label">Нет</label>
+
+        </div>
+      </form>
+      <form class="popup-form-comment">
+        <p class="popup-form-comment-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+        <textarea class="popup-form-comment-field" name="query" placeholder="Может, больше рецептов?"></textarea>
+      </form>
+      <button class="pop-up-button">Отправить</button>
+    </div>
+  </div>
   <header class="header">
     <div class="header-top">
       <a href="#0" class="header-logo">
@@ -372,8 +407,8 @@
       <div class="our-products-item">
         <div class="our-products-pictures">
           <picture>
-            <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 640px)" >
-            <source srcset="img/shop-item-tablet1.jpg" media="(max-width: 1199px)" >
+            <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 640px)">
+            <source srcset="img/shop-item-tablet1.jpg" media="(max-width: 1199px)">
             <img class="our-product-pic" src="img/shop-item-desk1.jpg" alt="Кукла Зайчик">
           </picture>
         </div>
