@@ -130,10 +130,14 @@ body {
   }
 }
 
-@media (min-width: 641px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
+
   .header-list {
     display: none;
   }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
 
   .head-img {
    width: 158px;
@@ -157,8 +161,53 @@ body {
     padding-bottom: 112px;
     letter-spacing: 2px;
   }
+
+  .header {
+  background-image: url("../img/banner-bg-tablet.jpg");
+  }
 }
 
+@media (max-width: 640px) {
+
+  .header-logo{
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 225px;
+   padding-left: 40px;
+  }
+
+  .head-img {
+   width: 269px;
+   margin: 0;
+  }
+
+  .header-label {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 29px;
+    max-width: 640px;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.008em;
+    padding-bottom: 212px;
+  }
+
+  .header-navigation {
+    padding-right: 15px;
+    margin-top: -205px;
+  }
+
+  .menu__button {
+  width: 1em;
+  height: 0.8em;  
+  }
+
+  .header {
+  margin: auto;
+  padding-top: 0px;
+  background-image: url("../img/banner-mobile.jpg");
+  }
+}
 
 .menu-list-item {
   list-style-type: none;
@@ -478,9 +527,142 @@ body {
   .now-post-label {
   margin-left: 10px;
   margin-right: 0px;
+  }
 }
 
+@media (max-width: 640px) and (orientation: portrait) { 
+
+  .trending-now {
+    margin-top: 38px;
+  }
+
+  .caption {
+    font-size: 16px;
+  }
+
+  .trending-now-post-card {
+  width: 100%;
+  margin-bottom: 4px;
+  }
+
+  .trending-now-posts {
+  flex-wrap: wrap;
+  margin-top: 24px;
+  }
+
+  .now-post-cheese{ 
+  margin-right: 0;
+  margin-left: 0;
+  }
+
+  .now-post-garden{ 
+  margin-right: 0;
+  margin-left: 0;
+  }
+
+  .now-post-mountain{ 
+  margin-right: 0;
+  margin-left: 0;
+  }  
+
+  .now-post-lemon{ 
+  margin-right: 0;
+  margin-left: 0;
+  }
+
+  .now-post-description {
+    margin-top: 90px;
+  }
+
+  .now-posts-tags {
+    margin-top: 24px;
+    margin-left: 18px;
+  }
+
+  .now-post-tags-link:nth-child(n + 2) {
+    padding-left: 17px;
+  }
+
+  .now-post-label-link {
+    font-size: 16px;
+  }
+
+  .now-post-label {
+    margin-top: 5px;
+    margin-left: 16px;
+    margin-bottom: 27px;
+    line-height: 18px;
+    letter-spacing: 0.0001em;
+  }
 }
+
+@media (max-width: 640px) and (orientation: landscape) { 
+
+    .trending-now {
+    margin-top: 38px;
+  }
+
+  .caption {
+    font-size: 16px;
+  }
+
+  .trending-now-post-card {
+  width: 50%;
+  margin-bottom: 4px;
+  }
+
+  .trending-now-posts {
+  flex-wrap: wrap;
+  margin-top: 24px;
+  }
+
+  .now-post-cheese{ 
+  margin-right: 0;
+  margin-left: 2px;
+  }
+
+  .now-post-garden{ 
+  margin-right: 2px;
+  margin-left: 0;
+  }
+
+  .now-post-mountain{ 
+  margin-right: 2px;
+  margin-left: 0;
+  }  
+
+  .now-post-lemon{ 
+  margin-right: 0;
+  margin-left: 2px;
+  }
+
+  .now-post-description {
+    margin-top: 90px;
+  }
+
+  .now-posts-tags {
+    margin-top: 24px;
+    margin-left: 18px;
+  }
+
+  .now-post-tags-link:nth-child(n + 2) {
+    padding-left: 17px;
+  }
+
+  .now-post-label-link {
+    font-size: 16px;
+  }
+
+  .now-post-label {
+    margin-top: 5px;
+    margin-left: 16px;
+    margin-bottom: 27px;
+    line-height: 18px;
+    letter-spacing: 0.0001em;
+  }
+
+}
+
 
 .page-middle {
   margin-left: auto;
@@ -712,6 +894,73 @@ body {
   .item-time-author {
     padding-top: 3px;
     margin-bottom: 27px;
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  .page-middle {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .main {
+    margin-top: 14px;
+  }
+
+  .posts-item {
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .main-posts {
+    width: 100vw;
+  }
+
+  .picture {
+    width: 91vw;
+    max-width: 360px;
+    margin-left: 15px;
+  }
+
+  .posts-item-label-link {
+    font-size: 16px;
+  }
+
+  .posts-item-description {
+    width: 91vw;
+    margin-left: 13px;
+    margin-top: 6px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #ededed;
+
+  }
+
+  .posts-item-label {
+    margin-top: 6px;
+    line-height: 17px;
+  }
+
+  .item-time-author {
+    margin-top: 15px;
+    margin-bottom: 12px;
+    letter-spacing: -0.002em;
+  }
+
+  .item-author {
+    margin-left: 10px;
+  }
+
+  .item-text {
+    line-height: 20px;
+    letter-spacing: -0.035em;
+  }
+
+  .item-text-second-paragraph {
+    margin-top: 6px;
+    line-height: 20px;
+    letter-spacing: -0.035em;
   }
 }
 
@@ -1011,6 +1260,75 @@ body {
   }
 }
 
+@media (max-width: 640px) {
+
+  .new-posts {
+    width: 91vw;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .headlines {
+    font-size: 16px;
+  }
+
+  .item-description {
+    margin-top: 2px;
+    margin-left: 17px;
+  }
+
+  .item-time {
+    margin-bottom: 2px;
+  }
+
+  .item-label {
+    line-height: 18px;
+    letter-spacing: 0.01em;
+  }
+
+  .page-search {
+    margin-top: 57px;
+    margin-bottom: 39px;
+  }
+
+  .search-label {
+    width: 100%;
+  }
+
+  .field {
+/*    width: 260px;*/
+    padding-right: 5px;
+    width: 100%;
+  }
+
+  .mailing-search {
+    margin-bottom: 38px;
+  }
+
+  .mailing-search-button {
+    margin-top: 19px;
+  }
+
+  .tags-block {
+    margin-top: 27px;
+    margin-bottom: 30px;
+  }
+
+  .tags-link-item {
+    margin-bottom: 15px;
+    margin-right: 3px;
+  }
+
+  .topics {
+    margin-top: 23px;
+  }
+
+  .topics-item {
+    margin-bottom: 12px;
+  }
+}
+
 .our-products {
   margin-top: 10px;
   width: 100%;
@@ -1273,9 +1591,7 @@ body {
     margin-top: 42px;
     letter-spacing: 0.01em;
   }
-
 }
-
 
 @media (min-width: 641px) and (max-width: 767px) {
 
@@ -1341,3 +1657,72 @@ body {
     letter-spacing: 0.01em;
   }
 }
+
+@media (max-width: 640px) {
+
+  .our-products {
+    margin-top: 32px;
+  }
+
+  .bottom-title {
+    font-size: 16px;
+  }
+
+  .our-products-items {
+    flex-direction: column;
+  }
+
+  .our-products-item {
+    margin-top: 1px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-box {
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .our-products-description {
+    width: 332px;
+    margin-top: -35px;
+    padding-left: 18px;
+    padding-top: 3px;
+    margin-bottom: 26px;
+    padding-bottom: 24px;
+  }
+
+  .our-product-lebel-link {
+    font-size: 17px;
+  }
+
+  .our-products-text {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 16px;
+    width: 272px;
+  }
+
+  .prie-and-button {
+    margin-left: 0;
+    width: 272px;
+  }
+
+  .footer-box {
+    margin-top: 13px;
+  }
+
+  .footer-copyright { 
+    margin-top: 42px;
+
+   }
+
+}
+
+
+
+
+
+
+
